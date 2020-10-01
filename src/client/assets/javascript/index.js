@@ -80,7 +80,8 @@ async function handleCreateRace() {
   // Get player_id and track_id from the store
   const { player_id, track_id } = store
 
-	// const race = TODO - invoke the API call to create the race, then save the result
+  // invoke the API call to create the race, then save the result
+  const race = await createRace(player_id, track_id)
 
 	// TODO - update the store with the race id
 
